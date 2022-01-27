@@ -1,35 +1,54 @@
-<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 18%; height: 100%">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      <span class="fs-4">Employee Manager</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a routerLink="/employees" class="nav-link active" aria-current="page">
-          Employees
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          Departments
-        </a>
-      </li>
-    </ul>
-    <hr/>
-    <div class="dropdown">
-      <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1"
-         data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="" alt="ico.." width="32" height="32" class="rounded-circle me-2">
-        <strong>Terrence</strong>
+<!-- Sidebar Nav -->
+<div id="sideNav" class="col-auto u-sidebar-navigation-v1 u-sidebar-navigation--dark">
+  <ul id="sideNavMenu" class="u-sidebar-navigation-v1-menu u-side-nav--top-level-menu g-min-height-100vh mb-0">
+    <!-- Employees -->
+    <li class="u-sidebar-navigation-v1-menu-item u-side-nav--has-sub-menu u-side-nav--top-level-menu-item u-side-nav-opened has-active">
+      <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#" data-hssm-target="#subMenu1">
+              <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
+      <em class="hs-admin-server"></em>
+    </span>
+        <span class="media-body align-self-center">Employees</span>
+        <span class="d-flex align-self-center u-side-nav--control-icon">
+      <em class="hs-admin-angle-right"></em>
+    </span>
+        <span class="u-side-nav--has-sub-menu__indicator"></span>
       </a>
-      <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li>
-          <hr class="dropdown-divider">
+      <!-- Employees: Submenu-1 -->
+      <ul id="subMenu1" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0" style="display: block;">
+        <!-- View All -->
+        <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+          <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12 active" href="">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <em class="hs-admin-infinite"></em>
+        </span>
+            <span class="media-body align-self-center">View All</span>
+          </a>
         </li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
+        <!-- End View All -->
+        <!-- Add New -->
+        <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
+          <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="#">
+                  <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
+          <em class="hs-admin-blackboard"></em>
+        </span>
+            <span class="media-body align-self-center">Add New</span>
+          </a>
+        </li>
+        <!-- End Add New -->
       </ul>
-    </div>
+      <!-- End Employees: Submenu-1 -->
+    </li>
+    <!-- End Employees -->
+    <!-- Sign Out -->
+    <li class="u-sidebar-navigation-v1-menu-item u-side-nav--top-level-menu-item">
+      <a class="media u-side-nav--top-level-menu-link u-side-nav--hide-on-hidden g-px-15 g-py-12" href="#">
+              <span class="d-flex align-self-center g-font-size-18 g-mr-18">
+      <em class="hs-admin-shift-left"></em>
+    </span>
+        <span class="media-body align-self-center">Sign Out</span>
+      </a>
+    </li>
+    <!-- End Sign Out -->
+  </ul>
 </div>
+<!-- End Sidebar Nav -->
