@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { EmployeeEditComponent } from './employees/employee-edit/employee-edit.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { EmployeeDetailComponent } from './employees/employee-detail/employee-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
     EmployeesComponent,
     HeaderComponent,
     FooterComponent,
-    EmployeeEditComponent
+    EmployeeEditComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,

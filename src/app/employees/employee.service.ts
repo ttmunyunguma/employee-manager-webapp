@@ -17,18 +17,21 @@ export class EmployeeService{
   }
 
   setEmployees(employees: Employee[]){
+    console.log("*****set employees");
     this.employees = employees;
     this.employeeChanged.next(this.employees.slice())
   }
 
   getAllEmployees(){
+    console.log("*****get employees");
     return this.employees.slice();
   }
   getEmployeeById(id: number): Observable<any>{
-    return this.http.get<Employee>(`${baseUrl}/employees/`);
+    return this.http.get<Employee>(`${baseUrl}/employees/${id}`);
   }
 
   fetchEmployees(): Observable<any>{
+    console.log("*****http fetch called");
     return this.http.get<Employee[]>(`${baseUrl}/employees/`).pipe(
       tap(response => {
         this.setEmployees(response);
